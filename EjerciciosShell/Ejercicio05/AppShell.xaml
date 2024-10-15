@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Ejercicio05.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Ejercicio05.Views"
+    Shell.FlyoutBehavior="Flyout"
+    Title="Ejercicio05">
+
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid BackgroundColor="Black"
+          HeightRequest="200">
+                <Image Aspect="AspectFill"
+               Source="mondongo.jpg"
+               Opacity="0.4" />
+                <Label Text="Mondongo"
+               TextColor="White"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Mangas"
+             Icon="bolas.png">
+            <ShellContent Title="OnePiece"
+                          Icon="op.png"
+                          ContentTemplate="{DataTemplate local:onepiece}" />
+            <ShellContent Title="ChainsawMan"
+                          Icon="chainsawman.png"
+                          ContentTemplate="{DataTemplate local:chainsawMan}" />
+        </Tab>
+        <Tab Title="Animes"
+             Icon="junjito.png">
+            <ShellContent Title="SNK"
+              Icon="snk.png"
+              ContentTemplate="{DataTemplate local:snk}" />
+            <ShellContent Title="Mid Kaisen"
+              Icon="midkaisen.png"
+              ContentTemplate="{DataTemplate local:midKaisen}" />
+        </Tab>
+    </FlyoutItem>
+
+</Shell>
