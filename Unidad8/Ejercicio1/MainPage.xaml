@@ -4,15 +4,15 @@
              x:Class="Ejercicio1.MainPage">
 
     <Border Stroke="BlueViolet" StrokeThickness="5" StrokeShape="RoundRectangle, 40, 40, 0, 0">
-        <VerticalStackLayout VerticalOptions="Center">
+        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
             
-            <Button Text="Boton 1" HorizontalOptions="Center" Margin="10" Padding="10" BorderColor="Black" BorderWidth="5"></Button>
-            <Button Text="Boton 2" HorizontalOptions="Center" Margin="10"></Button>
-            <Button Text="Boton 3" HorizontalOptions="Center" Margin="10"></Button>
-            
-            <HorizontalStackLayout HorizontalOptions="Center">
-                <Label Text="Nombre: " FontAttributes="Bold" Margin="0, 0, 10, 0" VerticalOptions="Center"></Label>
-                <Entry VerticalOptions="Center" WidthRequest="200" BackgroundColor="AliceBlue"></Entry>
+            <Button Text="Boton 1" Margin="10" Padding="10" BorderColor="Black" BorderWidth="5"></Button>
+            <Button Text="Boton 2" Margin="10"></Button>
+            <Button Text="Boton 3" Margin="10"></Button>
+
+            <HorizontalStackLayout Margin="0, 10, 0, 0">
+                <Label Text="Nombre: " FontAttributes="Bold" Margin="0, 0, 10, 0"></Label>
+                <Entry MinimumWidthRequest="100" BackgroundColor="AliceBlue"></Entry>
             </HorizontalStackLayout>
                 
         </VerticalStackLayout>
